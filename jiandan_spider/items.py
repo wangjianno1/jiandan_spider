@@ -1,14 +1,14 @@
-# -*- coding: utf-8 -*-
-
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://doc.scrapy.org/en/latest/topics/items.html
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-  
+"""
+Author: 
+Date:   2018-01-24 17:00
+Desc:   
+""" 
 
 import scrapy
 
 
-class JiandanSpiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class JianDanItem(scrapy.Item):
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
