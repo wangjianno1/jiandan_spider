@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-  
 """
-Author: 
+Author: wangjianno1@sina.com
 Date:   2018-01-24 17:00
-Desc:   
+Desc:   scrapy spider
 """
 import scrapy
 from jiandan_spider.items import JianDanItem 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-  
 """
-Author: 
+Author: wangjianno1@sina.com
 Date:   2018-01-24 17:00
-Desc:
+Desc:   Scrapy Pipeline
 """
 import scrapy
 from scrapy.exceptions import DropItem
