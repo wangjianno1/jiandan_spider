@@ -68,9 +68,8 @@ COOKIES_ENABLED = False
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'jiandan_spider.pipelines.JianDanImagesPipeline': 300,
+    #'jiandan_spider.pipelines.JianDanPipeline': 300,
 }
-#'jiandan_spider.pipelines.JianDanPipeline': 300,
-#'scrapy.pipelines.images.ImagesPipeline': 1,
 #IMAGES_STORE = '/root/workbench/github-workspace/jiandan_spider/data/'
 IMAGES_STORE = 'images'
 IMAGES_THUMBS = {
