@@ -71,7 +71,8 @@ ITEM_PIPELINES = {
 }
 #'jiandan_spider.pipelines.JianDanPipeline': 300,
 #'scrapy.pipelines.images.ImagesPipeline': 1,
-IMAGES_STORE = '/root/workbench/github-workspace/jiandan_spider/data/'
+#IMAGES_STORE = '/root/workbench/github-workspace/jiandan_spider/data/'
+IMAGES_STORE = 'images'
 IMAGES_THUMBS = {
     'small': (50, 50),
     'big': (270, 270),

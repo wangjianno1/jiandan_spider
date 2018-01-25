@@ -13,12 +13,17 @@ class JianDanSpider(scrapy.Spider):
     name = 'jiandan'
     allowed_domains = []
     #start_urls = ["http://jiandan.net/ooxx/"]
-    start_urls = ["http://www.sohu.com/"]
+    #start_urls = ["http://www.sohu.com/"]
 
     def parse(self, response):
+        current_page_title = response.xpath('//title/text()').extract_first()
+        #print current_page_title
         item = JianDanItem()
         item['image_urls'] = response.xpath('//img//@src').extract()
+        item['dom_title']  = current_page_title
         yield item
 
-        #new_url= response.xpath('//a[@class="previous-comment-page"]//@href').extract_first()
+        #new_url = 'http://djc027.com' + response.xpath('//a//@href').extract()[-2]
+        #new_url = response.xpath('//a//@href').extract_first()
+        #print new_url
         #if new_url: yield scrapy.Request(new_url,callback=self.parse)

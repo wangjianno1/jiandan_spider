@@ -11,3 +11,4 @@ import scrapy
 class JianDanItem(scrapy.Item):
     image_urls = scrapy.Field()
     images = scrapy.Field()
+    dom_title = scrapy.Field()
